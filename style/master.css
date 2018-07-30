@@ -1,0 +1,221 @@
+/*
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+ */
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: #eee;
+  font-size: 14px;
+  color: #212529;
+  position: relative;
+}
+
+html {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+p {
+  font-weight: lighter !important;
+}
+
+.faded {
+  opacity: .8;
+}
+
+.header-main {
+  position: relative;
+  color: white;
+  min-height: 550px;
+  width: 100vw;
+	background: #396afc;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #2948ff, #396afc);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #2948ff, #396afc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.header-smaller {
+	position: relative;
+	color: white;
+	min-height: 475px;
+	width: 100vw;
+	background: #00d2ff;
+	background: #396afc;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #2948ff, #396afc);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #2948ff, #396afc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.donate {
+  position: relative;
+  color: black;
+  min-height: 600px;
+  width: 100vw;
+  background: white;
+}
+
+.navbar {
+  padding-top: 40px;
+}
+
+.nav-item {
+  margin-right: 5px;
+}
+
+a.nav-link {
+  color: #f3f3f3;
+  font-size: 14px;
+  padding: 7px 15px !important;
+  border-radius: 0;
+  border: 2px none;
+}
+
+.nav-item.active>a.nav-link {
+  border: 1px solid white;
+}
+
+link {
+  background-color: #f44336;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+link:hover {
+  transition: 0.5s ease box-shadow;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.nav-item.dropdown.show>a.nav-link {
+  color: #fff;
+}
+
+a.nav-link:hover {
+  color: #fff;
+  /* border-bottom: solid 2px white; */
+}
+
+.navbar-nav li a:hover, .navbar-nav li a:focus {
+  color: #fff !important;
+  background-color: rgba(0, 0, 0, 0.2) !important;
+  transition: .2s ease-in-out;
+  -webkit-transition: .2s ease-in-out;
+}
+
+.dropdown-item {
+  font-size: 14px;
+}
+
+.navbar-toggler-icon {
+  color: white;
+  background-image: url("data:image/svg+xml;charset=utf8,<svg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'><path stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+}
+
+.header-text {
+  padding-top: 140px;
+}
+
+.header-text h1 {
+  font-weight: 600;
+  font-size: 32px;
+}
+
+.header-text p {
+  width: 60%;
+}
+
+.semi-title {
+  font-size: 24px;
+  font-weight: 600;
+  padding-top: 30px;
+  margin-bottom: 20px;
+}
+
+.semi-title>small {
+  display: block;
+  font-size: 20px;
+  color: #434b53;
+}
+
+.col-md-4>strong {
+  margin-bottom: 50px;
+}
+
+.checkbox {
+  margin-bottom: 5px;
+}
+
+.support {
+  min-height: 60vh;
+  width: 100%;
+}
+
+/*Checkboxes styles*/
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"]+label {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 20px;
+  font: 14px/20px 'Open Sans', Arial, sans-serif;
+  color: #000;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+input[type="checkbox"]+label:last-child {
+  margin-bottom: 0;
+}
+
+input[type="checkbox"]+label:before {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #007bff;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: .6;
+  -webkit-transition: all .12s, border-color .08s;
+  transition: all .12s, border-color .08s;
+}
+
+input[type="checkbox"]:checked+label:before {
+  width: 10px;
+  top: -5px;
+  left: 5px;
+  border-radius: 0;
+  opacity: 1;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
